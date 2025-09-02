@@ -1,0 +1,428 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Rumah Makan Khas Minang
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Animate fade-in-up */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Animate scale-in */
+    .scale-in {
+      opacity: 0;
+      transform: scale(0.8);
+      animation-fill-mode: forwards;
+      animation-name: scaleIn;
+      animation-duration: 0.8s;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes scaleIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-b from-blue-300 via-cream-100 to-orange-300 text-gray-900" style="--tw-gradient-from:#93c5fd; --tw-gradient-via:#fef3c7; --tw-gradient-to:#fb923c;">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-md shadow-md z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-extrabold text-orange-700 tracking-wide hover:text-orange-900 transition" href="#home">
+     <i class="fas fa-utensils mr-2">
+     </i>
+     Rumah Makan Khas Minang
+    </a>
+    <ul class="hidden md:flex space-x-8 font-semibold text-orange-800">
+     <li>
+      <a class="hover:text-orange-900 transition" href="#home">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-orange-900 transition" href="#menu">
+       Menu
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-orange-900 transition" href="#gallery">
+       Galeri Sejarah
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-orange-900 transition" href="#payment">
+       Pembayaran
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-orange-900 transition" href="#location">
+       Lokasi
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-orange-900 transition" href="#contact">
+       Kontak
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-orange-800 focus:outline-none" id="nav-toggle">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="md:hidden bg-cream-100/90 backdrop-blur-md shadow-inner hidden" id="nav-menu" style="background-color:#fef3c7;">
+    <ul class="flex flex-col space-y-3 px-6 py-4 font-semibold text-orange-900">
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#home">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#menu">
+       Menu
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#gallery">
+       Galeri Sejarah
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#payment">
+       Pembayaran
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#location">
+       Lokasi
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-orange-700 transition" href="#contact">
+       Kontak
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-cream-100" id="home" style="background-color:#fef3c7;">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <div class="md:w-1/2 fade-in-up" style="animation-delay: 0.2s;">
+     <h1 class="text-4xl md:text-5xl font-extrabold text-orange-900 leading-tight mb-4">
+      Selamat Datang di
+      <br/>
+      <span class="text-orange-700">
+       Rumah Makan Khas Minang
+      </span>
+     </h1>
+     <p class="text-orange-800 text-lg md:text-xl mb-6">
+      Nikmati cita rasa autentik masakan Padang yang kaya rempah dan penuh kehangatan.
+     </p>
+     <a class="inline-block bg-orange-700 hover:bg-orange-800 text-cream-50 font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105" href="#menu" style="color:#fef3c7;">
+      Lihat Menu
+     </a>
+    </div>
+    <div class="md:w-1/2 scale-in" style="animation-delay: 0.4s;">
+     <img alt="Piring berisi berbagai masakan Padang tradisional seperti rendang, gulai, sambal hijau, dan sayur nangka, tersaji di atas meja kayu dengan latar belakang dekorasi rumah makan khas Minang" class="rounded-xl shadow-lg w-full object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/09f475bb-ed57-4780-e077-7776423bad28.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Menu Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="menu">
+   <h2 class="text-3xl md:text-4xl font-extrabold text-orange-900 text-center mb-12 fade-in-up" style="animation-delay: 0.2s;">
+    Menu Andalan Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.3s; background-color:#fff7ed;">
+     <img alt="Sepiring rendang daging sapi khas Padang berwarna coklat gelap dengan bumbu rempah yang kental, disajikan di piring putih dengan daun pisang sebagai alas" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9aa4661f-dfc5-45a6-d582-d13a16eed15b.jpg" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Rendang Daging
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Daging sapi empuk dimasak dengan bumbu rempah khas Minang yang kaya rasa dan aroma.
+      </p>
+     </div>
+    </article>
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.4s; background-color:#fff7ed;">
+     <img alt="Sepiring gulai ayam khas Padang berkuah kuning pekat dengan potongan ayam dan rempah, disajikan di piring putih dengan hiasan daun kemangi" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2a70db07-3a01-4331-8794-1436bb6bcdab.jpg" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Gulai Ayam
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Ayam kampung dimasak dengan kuah gulai kental dan rempah pilihan khas Minang.
+      </p>
+     </div>
+    </article>
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.5s; background-color:#fff7ed;">
+     <img alt="Sepiring ayam pop khas Padang berwarna kuning keemasan dengan sambal lado hijau, disajikan di piring putih dengan daun pisang" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/24633525-4df2-4c24-caf1-8a8385cb9fda.jpg" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Ayam Pop
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Ayam goreng khas Minang yang lembut dan gurih, disajikan dengan sambal lado hijau.
+      </p>
+     </div>
+    </article>
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.6s; background-color:#fff7ed;">
+     <img alt="Sepiring ikan asam padeh khas Padang dengan kuah merah pedas asam, disajikan di piring putih dengan hiasan daun kemangi" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://awsimages.detik.net.id/community/media/visual/2021/06/22/resep-asam-padeh-ikan-tongkol_43.jpeg?w=1200" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Ikan Asam Padeh
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Ikan segar dimasak dengan kuah asam pedas yang menggugah selera khas Minang.
+      </p>
+     </div>
+    </article>
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.7s; background-color:#fff7ed;">
+     <img alt="Sepiring sayur nangka khas Padang berkuah santan dengan potongan nangka muda dan rempah, disajikan di piring putih" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/07/Resep-Sayur-Nangka-Kapau.jpg?fit=1920%2C1472&ssl=1" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Sayur Nangka
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Sayur nangka muda dimasak dengan santan dan rempah khas Minang yang lezat.
+      </p>
+     </div>
+    </article>
+    <article class="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.8s; background-color:#fff7ed;">
+     <img alt="Mangkok kecil berisi sambal ijo khas Padang berwarna hijau segar dengan potongan cabai hijau dan tomat hijau" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://rajominang.id/blog/uploads/images/202407/image_750x_668401e5be64b.jpg" width="400"/>
+     <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-800 mb-2">
+       Sambal Ijo
+      </h3>
+      <p class="text-orange-700 text-sm">
+       Sambal hijau pedas segar yang menjadi pelengkap wajib masakan Padang.
+      </p>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- Gallery Section -->
+  <section class="bg-cream-100 py-16 px-6" id="gallery" style="background-color:#fef3c7;">
+   <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-orange-900 text-center mb-12 fade-in-up" style="animation-delay: 0.2s;">
+     Galeri Sejarah Rumah Makan Padang
+    </h2>
+    <p class="text-orange-800 max-w-3xl mx-auto text-center mb-12 fade-in-up" style="animation-delay: 0.3s;">
+     Rumah makan Padang telah menjadi bagian penting dari budaya Minang dan Indonesia. Berikut beberapa momen dan sejarah yang kami abadikan.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.4s;">
+      <img alt="Foto hitam putih rumah makan Padang tradisional tahun 1950 dengan bangunan kayu dan atap rumbia, suasana pasar tradisional di sekitarnya" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/439937e7-a114-4513-1190-a2ac75b05bec.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Rumah Makan Padang Tradisional Tahun 1950
+      </figcaption>
+     </figure>
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.5s;">
+      <img alt="Foto keluarga pemilik rumah makan Padang tahun 1965 mengenakan pakaian tradisional Minang, berpose di depan rumah makan" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e5066700-dd24-4a62-7be7-bbf56e47c444.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Keluarga Pemilik Rumah Makan Padang 1965
+      </figcaption>
+     </figure>
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.6s;">
+      <img alt="Proses memasak rendang tradisional di dapur rumah makan Padang dengan panci besar dan api kayu, chef sedang mengaduk rendang" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/76a067e2-e1ec-4c56-b09c-e6c08a21c2fe.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Proses Memasak Rendang Tradisional
+      </figcaption>
+     </figure>
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.7s;">
+      <img alt="Suasana rumah makan Padang modern dengan interior kayu dan dekorasi khas Minang, pelanggan sedang menikmati hidangan" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a7c3cabd-63ec-4a43-4fdd-6c71e9f617d1.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Suasana Rumah Makan Padang Modern
+      </figcaption>
+     </figure>
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.8s;">
+      <img alt="Meja makan dengan berbagai menu khas Padang tersaji rapi, piring-piring berisi rendang, gulai, sambal, dan sayur nangka" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4a0cf8d5-e0ca-49c5-c890-3838fde63330.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Menu Khas Padang di Meja Makan
+      </figcaption>
+     </figure>
+     <figure class="rounded-xl overflow-hidden shadow-lg fade-in-up" style="animation-delay: 0.9s;">
+      <img alt="Chef rumah makan Padang sedang memasak di dapur dengan ekspresi fokus, mengenakan pakaian koki dan topi putih" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a045764b-75d2-47ee-fda8-12f7a2329a3b.jpg" width="400"/>
+      <figcaption class="p-4 bg-cream-50 text-orange-900 font-semibold text-center" style="background-color:#fff7ed;">
+       Chef Rumah Makan Padang Sedang Memasak
+      </figcaption>
+     </figure>
+    </div>
+   </div>
+  </section>
+  <!-- Payment Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="payment">
+   <h2 class="text-3xl md:text-4xl font-extrabold text-orange-900 text-center mb-12 fade-in-up" style="animation-delay: 0.2s;">
+    Metode Pembayaran E-Wallet
+   </h2>
+   <p class="text-orange-800 max-w-3xl mx-auto text-center mb-10 fade-in-up" style="animation-delay: 0.3s;">
+    Kami menerima berbagai metode pembayaran e-wallet untuk kemudahan Anda saat bertransaksi.
+   </p>
+   <div class="flex flex-wrap justify-center gap-10">
+    <div class="flex flex-col items-center bg-cream-50 rounded-xl shadow-lg p-6 w-40 transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.4s; background-color:#fff7ed;">
+     <img alt="Logo GoPay berwarna hijau dengan tulisan GoPay" class="w-24 h-24 object-contain mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/273a3987-d50f-4d6b-4729-c5efd97f2ecc.jpg" width="96"/>
+     <span class="text-orange-800 font-semibold text-lg">
+      GoPay
+     </span>
+    </div>
+    <div class="flex flex-col items-center bg-cream-50 rounded-xl shadow-lg p-6 w-40 transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.5s; background-color:#fff7ed;">
+     <img alt="Logo OVO berwarna ungu dengan tulisan OVO" class="w-24 h-24 object-contain mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1e459510-2607-4012-80fe-579d016afa4e.jpg" width="96"/>
+     <span class="text-orange-800 font-semibold text-lg">
+      OVO
+     </span>
+    </div>
+    <div class="flex flex-col items-center bg-cream-50 rounded-xl shadow-lg p-6 w-40 transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.6s; background-color:#fff7ed;">
+     <img alt="Logo Dana berwarna merah dengan tulisan Dana" class="w-24 h-24 object-contain mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/68a4e4ca-d1db-459d-0507-b3d355518833.jpg" width="96"/>
+     <span class="text-orange-800 font-semibold text-lg">
+      Dana
+     </span>
+    </div>
+    <div class="flex flex-col items-center bg-cream-50 rounded-xl shadow-lg p-6 w-40 transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.7s; background-color:#fff7ed;">
+     <img alt="Logo LinkAja berwarna merah dengan tulisan LinkAja" class="w-24 h-24 object-contain mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c97580b5-5877-4a9b-a48e-ca941647b87b.jpg" width="96"/>
+     <span class="text-orange-800 font-semibold text-lg">
+      LinkAja
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- Location Section -->
+  <section class="bg-cream-100 py-16 px-6" id="location" style="background-color:#fef3c7;">
+   <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-orange-900 text-center mb-12 fade-in-up" style="animation-delay: 0.2s;">
+     Lokasi Kami
+    </h2>
+    <p class="text-orange-800 max-w-3xl mx-auto text-center mb-10 fade-in-up" style="animation-delay: 0.3s;">
+     Kunjungi Rumah Makan Khas Minang kami di alamat berikut. Kami siap menyambut Anda dengan hidangan terbaik.
+    </p>
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto fade-in-up" style="animation-delay: 0.4s;">
+     <iframe allowfullscreen="" class="w-full h-96 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31720.63915765328!2d107.58896134740534!3d-6.383689485675563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696a4e0448ea97%3A0x720eb22bcab60f96!2sRancamulya%2C%20Kec.%20Patokbeusi%2C%20Kabupaten%20Subang%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1756794587958!5m2!1sid!2sid" width="600" style="border:0;" title="Peta lokasi Rumah Makan Khas Minang di kota Padang">
+     </iframe>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="contact">
+   <h2 class="text-3xl md:text-4xl font-extrabold text-orange-900 text-center mb-12 fade-in-up" style="animation-delay: 0.2s;">
+    Hubungi Kami
+   </h2>
+   <div class="max-w-3xl mx-auto bg-cream-50 rounded-xl shadow-lg p-8 fade-in-up" style="animation-delay: 0.3s; background-color:#fff7ed;">
+    <form class="space-y-6" id="contactForm">
+     <div>
+      <label class="block text-orange-800 font-semibold mb-2" for="name">
+       Nama
+      </label>
+      <input class="w-full px-4 py-3 rounded-md border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500" id="name" name="name" placeholder="Masukkan nama Anda" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-orange-800 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full px-4 py-3 rounded-md border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-orange-800 font-semibold mb-2" for="message">
+       Pesan
+      </label>
+      <textarea class="w-full px-4 py-3 rounded-md border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500" id="message" name="message" placeholder="Tulis pesan Anda" required="" rows="4"></textarea>
+     </div>
+     <button class="bg-orange-700 hover:bg-orange-800 text-cream-50 font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105" type="submit" style="color:#fef3c7;">
+      Kirim Pesan
+     </button>
+    </form>
+    <p class="mt-4 text-center font-semibold text-orange-700 hidden" id="formMessage">
+    </p>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-orange-700 text-cream-50 py-8 mt-16" style="background-color:#fb923c; color:#fef3c7;">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="text-sm">
+     © 2024 Rumah Makan Khas Minang. All rights reserved.
+    </p>
+    <div class="flex space-x-6 text-cream-200" style="color:#fde3c3;">
+     <a aria-label="Facebook" class="hover:text-cream-50 transition" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-cream-50 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-cream-50 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Navbar toggle for mobile
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+
+    // Animate fade-in-up and scale-in on scroll
+    const animatedElements = document.querySelectorAll('.fade-in-up, .scale-in');
+
+    function animateOnScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      animatedElements.forEach((el) => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.style.animationPlayState = 'running';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', () => {
+      animatedElements.forEach((el) => {
+        el.style.animationPlayState = 'paused';
+      });
+      animateOnScroll();
+    });
+
+    // Contact form submission simulation
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMessage.classList.remove('hidden');
+      formMessage.textContent = 'Mengirim pesan...';
+
+      setTimeout(() => {
+        formMessage.textContent = 'Terima kasih! Pesan Anda telah terkirim.';
+        contactForm.reset();
+      }, 1500);
+    });
+  </script>
+ </body>
+</html>
